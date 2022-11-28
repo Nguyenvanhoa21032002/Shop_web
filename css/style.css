@@ -1,0 +1,168 @@
+.wapper{
+    font-family: 'Ubuntu', sans-serif;
+}
+.navbar {
+    margin-top: -8px;
+}
+
+.container-fluid {
+    background-color: #2b4db3;
+}
+
+.container-fluid a {
+    color: #F26526;
+}
+
+.container-fluid a:hover {
+    color: white;
+}
+
+.navbar-brand img {
+    border-radius: 0.5rem;
+}
+
+.fa-solid {
+    padding: 10px;
+    color: #F26526;
+}
+
+.fa-solid:hover {
+    transform: scale(1.1);
+    color: #fff;
+}
+
+.d-flex {
+    height: 35px;
+}
+
+.btn {
+    border: 1px solid #F26526;
+}
+
+.fa-magnifying-glass {
+    margin-top: -15px;
+
+}
+
+.btn:hover {
+    background-color: #fff;
+}
+
+
+
+
+#carouselExampleCaptions {
+    padding-top: 100px;
+    margin: 0;
+}
+
+.carousel-item object {
+    width: auto;
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+footer {
+    margin-top: 20px;
+    background-color: #223671;
+}
+
+footer .subcribe-section {
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    border-bottom: 1px solid #fff;
+}
+
+footer .subcribe-section .input-form {
+    background-color: #fff;
+}
+
+footer .subcribe-section .input-form input::placeholder {
+    color: #221e27;
+}
+
+footer .subcribe-section .input-form input,
+footer .subcribe-section .input-form button {
+    border: none;
+    padding: 5px 10px;
+    font-weight: 500;
+    outline: none;
+}
+
+footer .subcribe-section .input-form button {
+    color: #fff;
+    background-color: #fe4502;
+}
+
+footer .subcribe-section .input-form button:hover {
+    background-color: #fe0f02;
+    cursor: pointer;
+}
+
+.more-in4-section {
+    text-align: justify;
+    display: grid;
+    grid-template-columns: 24% 24% 24% 24%;
+    justify-content: space-between;
+    padding: 20px 40px;
+    color: #fff;
+}
+
+.more-in4-section h3 {
+    margin-bottom: 3px;
+    cursor: pointer;
+    color: #F26526;
+}
+
+.more-in4-section h3:hover .boder-bt {
+    width: 70%;
+}
+
+.more-in4-section p {
+    margin-top: 5px;
+}
+
+.more-in4-section a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.more-in4-section .pay-method i:hover,
+.more-in4-section p a:hover,
+.more-in4-section p i:hover,
+.more-in4-section p:hover {
+    color: #ad8d5b;
+    cursor: pointer;
+}
+
+.more-in4-section .fruty p:hover {
+    color: #fff;
+    cursor: text;
+}
+
+.more-in4-section .fruty a i {
+    margin-top: 10px;
+    margin-right: 5px;
+    font-size: 18px;
+}
+
+.more-in4-section .pay-method {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+}
+
+.more-in4-section .pay-method i {
+    font-size: 40px;
+}
+
+.more-in4-section .boder-bt {
+    border-top: 2px solid rgba(255, 255, 255, .7);
+    width: 45px;
+    margin-top: -1px;
+    transition: .4s ease;
+}
