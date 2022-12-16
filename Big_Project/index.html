@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img/logo.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="./product.css">
+    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="./contact.css">
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <title>BFFruit</title>
+</head>
+<body>
+    <!-- header section start -->
+    <div class="header" id="header">
+        <!-- navbar -->
+        <nav class="navbar">
+            <div class="logo">
+                <a href="#">BFFruit<span>.</span></a>
+            </div>
+
+            <ul class="nav-items-pc">
+                <li id="home"><a class="js-home btn1" id="btn-home" href="#">Trang chủ</a></li>
+                <li id="prod"><a class="js-prod btn2" id="btn-product" href="#">Sản phẩm</a></li>
+                <li id="contact"><a class="js-contact btn3" id="btn-contact" href="#">Liên hệ</a></li>
+                <a class="js-cart-shop" id="cart-icon-mobile" href="#"><i class="fa-solid fa-cart-shopping" ></i></a>
+            </ul>
+
+            <div class="cart_main">
+                <h2 class="cart-title">Giỏ hàng của bạn</h2>
+                <!-- content -->
+                <div class="cart-content" id="itemstorage">
+                    
+                </div>
+                <!-- total -->
+                <div class="total">
+                    <div class="total-title">Tổng: </div>
+                    <div class="total-price">0</div>
+                </div>
+                <!-- Buy btn -->
+                <button type="button" class="btn-buy">Thanh toán ngay</button>
+                <!-- cart close -->
+                <i class="fa-solid fa-xmark" id="close-cart"></i>   
+            </div>
+
+            <label for="nav-mobile-input" class="nav-bar">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+
+            <input type="checkbox" hidden class="nav__input" id="nav-mobile-input">
+
+            <label for="nav-mobile-input" class="nav-overlay"></label>
+
+            <ul class="nav-items-mobile">
+                <label for="nav-mobile-input" class="close">
+                    <i class="fa-solid fa-xmark"></i>
+                </label>
+                <div class="nav-list">
+                    <label for="nav-mobile-input" class="js-home"><i class="fa-solid fa-house"></i>Trang chủ</label>
+                    <label for="nav-mobile-input" class="js-prod"><i class="fa-sharp fa-solid fa-bag-shopping"></i>Sản phẩm</label>
+                    <label for="nav-mobile-input" class="js-contact"><i class="fa-solid fa-address-book"></i>Liên hệ</label>
+                    <label for="nav-mobile-input" class="js-cart-shop" id="cart-shop">
+                        <i class="fa-solid fa-cart-shopping" id="cart-icon"></i>Giỏ Hàng
+                    </label>
+                </div>
+            </ul>
+
+
+        </nav>
+    </div>
+    <!-- header section end -->
+    
+    <div class="home-page">
+        <div class="js-modal-contain">
+            <div class="slider swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide i1">
+                        <div id="hero">
+                            <h1>Trải nghiệm hoa quả sạch - healthy với giá ưu đãi</h1>
+                            <p>Trợ giá duy nhất hôm nay</p>
+                            <div class="btn">
+                                <a class="js-prod btn2" href="#">Mua ngay</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide i2">
+                        <div id="hero">
+                            <h1>Trải nghiệm hoa quả sạch - healthy với giá ưu đãi</h1>
+                            <p>Trợ giá duy nhất hôm nay</p>
+                            <div class="btn">
+                                <a class="js-prod btn2" href="#">Mua ngay</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide i3">
+                        <div id="hero">
+                            <h1>Trải nghiệm hoa quả sạch - healthy với giá ưu đãi</h1>
+                            <p>Trợ giá duy nhất hôm nay</p>
+                            <div class="btn">
+                                <a class="js-prod btn2" href="#">Mua ngay</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="section-wrap">
+                <div class="sub-section-title">
+                    <p>Sản phẩm hàng đầu</p>
+                    <a class="js-prod btn2" href="#">Đến gian hàng ngay  <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+    
+                <div class="products">
+                    <div class="fruit apple">
+                        <div class="fruit-text">
+                            <h2>Táo</h2>
+                            <p>Sẵn có:</p>
+                            <span>260kg+</span>
+                        </div>
+                    </div>
+    
+                    <div class="fruit mango">
+                        <div class="fruit-text">
+                            <h2>Xoài</h2>
+                            <p>Sẵn có: </p>
+                            <span>180kg+</span>
+                        </div>
+                    </div>
+    
+                    <div class="fruit peach">
+                        <div class="fruit-text">
+                            <h2>Đào </h2>
+                            <p>Sẵn có: </p>
+                            <span>220kg+</span>
+                        </div>
+                    </div>
+    
+                    <div class="fruit strawberry">
+                        <div class="fruit-text">
+                            <h2>Dâu tây</h2>
+                            <p>Sẵn có: </p>
+                            <span>280kg+</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section-wrap">
+                <div class="sub-section-title">
+                    <p>Phản hồi từ khách hàng</p>
+                    <a class="js-prod btn2" href="#">Đến gian hàng ngay  <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+    
+                <div class="customer-fbs">
+                    <div class="feedback">
+                        <div class="customer-disc">
+                            <img src="./img/customer_1.jpg" alt="">
+                            <div class="review">
+                                <p class="star">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </p>
+                                <p>Kim Trọng</p>
+                            </div>
+                        </div>
+                        <div class="customer-cmt">
+                            <p>Hoa quả vô cùng sạch sẽ và ngon miệng, sẽ còn ủng hộ những lần tới! </p>
+                        </div>
+                    </div>
+
+                    <div class="feedback">
+                        <div class="customer-disc">
+                            <img src="./img/customer_2.jpg" alt="">
+                            <div class="review">
+                                <p class="star">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </p>
+                                <p>Trương Ba</p>
+                            </div>
+                        </div>
+                        <div class="customer-cmt">
+                            <p>Thật là tệ :((, tệ cho những ai chưa từng ăn qua hoa quả ở quán này. Bạn sẽ hối hận vì không mua ngay bây giờ đấy!</p>
+                        </div>
+                    </div>
+
+                    <div class="feedback">
+                        <div class="customer-disc">
+                            <img src="./img/customer_4.jpg" alt="">
+                            <div class="review">
+                                <p class="star">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </p>
+                                <p>Phạm Thanh Tú</p>
+                            </div>
+                        </div>
+                        <div class="customer-cmt">
+                            <p>Ừ thì nó cũng bình thường, chả ngon lắm =)), nhưng đấy là tôi nói shop khác chứ shop này thì nó tuyệt vời vãi cả linh hồn :v. Em ngon lắm ^^ </p>
+                        </div>
+                    </div>
+
+                    <div class="feedback">
+                        <div class="customer-disc">
+                            <img src="./img/customer_4.jpg" alt="">
+                            <div class="review">
+                                <p class="star">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </p>
+                                <p>Chiến Phạm</p>
+                            </div>
+                        </div>
+                        <div class="customer-cmt">
+                            <p>Ô thế hóa ra đây là Thiên Đường fruits à :>, tiên nữ đâu hết rồi mau đưa a vào mua mau nào!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+        <footer>
+            <div class="subcribe-section">
+                <p>Đăng ký để nhận tất cả thông tin mới sớm nhất</p>
+                <form class="input-form">
+                    <input type="text" placeholder="Nhập Email của bạn" required>
+                    <button type="submit">Đăng ký</button>
+                </form>
+            </div>
+
+            <div class="more-in4-section">
+                <div class="fruty">
+                    <h3>
+                        Fruty
+                        <p class="boder-bt"></p>
+                    </h3>
+                    <p>Shop hoa quả uy tín, đảm bảo sạch sẽ, đảm bảo sức khỏe. <br>Hoa quả ngon, vui cả nhà ^^</p>
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-github"></i></a>
+                </div>
+    
+                <div class="menu">
+                    <h3>
+                        Menu
+                        <p class="boder-bt"></p>
+                    </h3>
+                    <p><a href="index.html">Trang chủ</a></p>
+                    <p><a href="category.html">Sản phẩm</a></p>
+                    <p><a href="contact.html">Liên hệ</a></p>
+                </div>
+    
+                <div class="top-prod">
+                    <h3>
+                        Sản phẩm hàng đầu
+                        <p class="boder-bt"></p>
+                    </h3>
+                    <p>Táo</p>
+                    <p>Dưa hấu</p>
+                    <p>Nho xanh Hàn Quốc</p>
+                    <p>Dâu tây</p>
+                    <p>Cam Valencia</p>
+                </div>
+                
+                <div class="payment">
+                    <h3>
+                        Thanh toán
+                        <p class="boder-bt"></p>
+                    </h3>
+                    <div class="pay-method">
+                        <p><i class="fa-brands fa-cc-amazon-pay"></i></p>
+                        <p><i class="fa-brands fa-cc-mastercard"></i></p>
+                        <p><i class="fa-brands fa-cc-paypal"></i></p>
+                        <p><i class="fa-brands fa-cc-visa"></i></p>
+                        <p><i class="fa-brands fa-cc-discover"></i></p>
+                        <p><i class="fa-brands fa-cc-jcb"></i></p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <div class="product-page">
+        
+        <div class="wrapper">
+            <div id="search-container">
+                <input type="search" name="" class="search-input" id="search-input" placeholder="Gõ tên hoa quả">
+                <button id="search" class="search">Tìm kiếm</button>
+            </div>
+            <div id="buttons">
+                <button class="button-value" onclick="filterProduct('all')">Tất cả</button>
+                <button class="button-value" onclick="filterProduct('topFruit')">Hoa quả bán chạy</button>
+                <button class="button-value" onclick="filterProduct('importFruit')">Hoa quả nhập khẩu</button>
+                <button class="button-value" onclick="filterProduct('vnFruit')">Hoa quả Việt Nam</button>
+                <button class="button-value" onclick="filterProduct('giftFruit')">Hoa quả biếu tặng</button>
+                <button class="button-value" onclick="filterProduct('dryFruit')">Hoa quả sấy khô</button>
+            </div>
+            <div id="products">
+                <!-- <div class="card dryFruit hide">
+                    <div class="image-container">
+                        <img src="./img/19.jpg" alt="" class="product-img">
+                    </div>
+                    <div class="container">
+                        <h5 class="product-title">Mít Sấy Khô</h5>
+                        <h6 class="price">50.000 VND/kg</h6>
+                        <button class="button add-cart">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            Thêm vào giỏ hàng
+                        </button>
+                    </div>
+                </div>  -->
+            </div>
+        </div>
+
+        <!-- <div class="category">
+            <div class="heading" id="dryFruit">
+                <h1>Hoa quả sấy khô</h1>
+                <p style="margin-top: 10px;">tất cả các loại trái cây được sấy thơm, giòn cực ngon</p>
+            </div>
+    
+            <div class="fruits">
+                
+    
+                <div class="fruit">
+                    <img src="./img/20.jpg" alt="" class="product-img">
+                    <p class="product-title">chuối Sấy Khô</p>
+                    <p class="price">50.000 VND/kg</p>
+                    <a class="button add-cart">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        Thêm vào giỏ hàng
+                    </a>
+                </div>
+    
+                <div class="fruit">
+                    <img src="./img/21.jpg" alt="" class="product-img">
+                    <p class="product-title">Mít Sấy Dẻo</p>
+                    <p class="price">50.000 VND/kg</p>
+                    <a class="button add-cart">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        Thêm vào giỏ hàng
+                    </a>
+                </div>
+    
+                <div class="fruit">
+                    <img src="./img/22.jpg" alt="" class="product-img">
+                    <p class="product-title">kiwi Sấy Dẻo</p>
+                    <p class="price">50.000 VND/kg</p>
+                    <a class="button add-cart">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        Thêm vào giỏ hàng
+                    </a>
+                </div>
+    
+                <div class="fruit">
+                    <img src="./img/23.jpg" alt="" class="product-img">
+                    <p class="product-title">Mít Sấy rộp rộp</p>
+                    <p class="price">50.000 VND/kg</p>
+                    <a class="button add-cart">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        Thêm vào giỏ hàng
+                    </a>
+                </div>
+    
+                <div class="fruit">
+                    <img src="./img/24.jpg" alt="" class="product-img">
+                    <p class="product-title">Xoài Sấy Muối Ớt</p>
+                    <p class="price">50.000 VND/kg</p>
+                    <a class="button add-cart">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        Thêm vào giỏ hàng
+                    </a>
+                </div>
+    
+                <div class="fruit">
+                    <img src="./img/31.jpg" alt="" class="product-img">
+                    <p class="product-title">Khoai lang sấy giòn</p>
+                    <p class="price">50.000 VND/kg</p>
+                    <a class="button add-cart">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        Thêm vào giỏ hàng
+                    </a>
+                </div>
+    
+                <div class="fruit">
+                    <img src="./img/32.jpg" alt="" class="product-img">
+                    <p class="product-title">mận sấy dẻo</p>
+                    <p class="price">50.000 VND/kg</p>
+                    <a class="button add-cart">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        Thêm vào giỏ hàng
+                    </a>
+                </div>
+            </div>
+        </div> -->
+    
+        <footer>
+            <div class="subcribe-section">
+                <p>Đăng ký để nhận tất cả thông tin mới sớm nhất</p>
+                <form class="input-form">
+                    <input type="text" placeholder="Nhập Email của bạn" required>
+                    <button type="submit">Đăng ký</button>
+                </form>
+            </div>
+    
+            <div class="more-in4-section">
+                <div class="fruty">
+                    <h3>
+                        Fruty
+                        <p class="boder-bt"></p>
+                    </h3>
+                    <p>Shop hoa quả uy tín, đảm bảo sạch sẽ, đảm bảo sức khỏe. <br>Hoa quả ngon, vui cả nhà ^^</p>
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-github"></i></a>
+                </div>
+    
+                <div class="menu">
+                    <h3>
+                        Menu
+                        <p class="boder-bt"></p>
+                    </h3>
+                    <p><a href="index.html">Trang chủ</a></p>
+                    <p><a href="category.html">Sản phẩm</a></p>
+                    <p><a href="contact.html">Liên hệ</a></p>
+                </div>
+    
+                <div class="top-prod">
+                    <h3>
+                        Sản phẩm hàng đầu
+                        <p class="boder-bt"></p>
+                    </h3>
+                    <p>Táo</p>
+                    <p>Dưa hấu</p>
+                    <p>Nho xanh Hàn Quốc</p>
+                    <p>Dâu tây</p>
+                    <p>Cam Valencia</p>
+                </div>
+                
+                <div class="payment">
+                    <h3>
+                        Thanh toán
+                        <p class="boder-bt"></p>
+                    </h3>
+                    <div class="pay-method">
+                        <p><i class="fa-brands fa-cc-amazon-pay"></i></p>
+                        <p><i class="fa-brands fa-cc-mastercard"></i></p>
+                        <p><i class="fa-brands fa-cc-paypal"></i></p>
+                        <p><i class="fa-brands fa-cc-visa"></i></p>
+                        <p><i class="fa-brands fa-cc-discover"></i></p>
+                        <p><i class="fa-brands fa-cc-jcb"></i></p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <div class="contact-page">
+        <div class="contact-area">
+            <div class="contact-form">
+                <h1>Liên hệ với chúng tôi</h1>
+                <div class="form-box">
+                    <div class="info">
+                        <h3>Thông tin</h3>
+                        <p><i class="fa-solid fa-location-dot"></i>Số Nhà 33, Phố Nguyễn Trác, Phường Yên Nghĩa, Quận Hà Đông, Hà Nội</p>
+                        <p><i class="fa-solid fa-envelope"></i>HLNGroup-phenikaa@gmail.com</p>
+                        <p><i class="fa-solid fa-phone"></i>0399.999.999</p>
+                    </div>
+                    <form class="form">
+                        <div class="name">
+                            <input type="text" name="" placeholder="First Name" required>
+                            <input type="text" name="" placeholder="Last Name" required>
+                        </div>
+                        <div>
+                            <input type="email" name="" placeholder="Email" id="" required>
+                        </div>
+                        <textarea name="" id="textarea" cols="30" rows="10" placeholder="Message"></textarea>
+                        <button class="btn" type="submit" onclick="button()">send</button>
+                    </form>
+                </div>
+            </div>
+            <div class="bg-color">
+            </div>
+        </div>
+    
+        <footer>
+            <div class="subcribe-section">
+                <p>Đăng ký để nhận tất cả thông tin mới sớm nhất</p>
+                <form class="input-form">
+                    <input type="text" placeholder="Nhập Email của bạn" required>
+                    <button type="submit">Đăng ký</button>
+                </form>
+            </div>
+    
+            <div class="more-in4-section">
+                <div class="fruty">
+                    <h3>
+                        Fruty
+                        <p class="boder-bt"></p>
+                    </h3>
+                    <p>Shop hoa quả uy tín, đảm bảo sạch sẽ, đảm bảo sức khỏe. <br>Hoa quả ngon, vui cả nhà ^^</p>
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-github"></i></a>
+                </div>
+    
+                <div class="menu">
+                    <h3>
+                        Menu
+                        <p class="boder-bt"></p>
+                    </h3>
+                    <p><a href="index.html">Trang chủ</a></p>
+                    <p><a href="category.html">Sản phẩm</a></p>
+                    <p><a href="contact.html">Liên hệ</a></p>
+                </div>
+    
+                <div class="top-prod">
+                    <h3>
+                        Sản phẩm hàng đầu
+                        <p class="boder-bt"></p>
+                    </h3>
+                    <p>Táo</p>
+                    <p>Dưa hấu</p>
+                    <p>Nho xanh Hàn Quốc</p>
+                    <p>Dâu tây</p>
+                    <p>Cam Valencia</p>
+                </div>
+                
+                <div class="payment">
+                    <h3>
+                        Thanh toán
+                        <p class="boder-bt"></p>
+                    </h3>
+                    <div class="pay-method">
+                        <p><i class="fa-brands fa-cc-amazon-pay"></i></p>
+                        <p><i class="fa-brands fa-cc-mastercard"></i></p>
+                        <p><i class="fa-brands fa-cc-paypal"></i></p>
+                        <p><i class="fa-brands fa-cc-visa"></i></p>
+                        <p><i class="fa-brands fa-cc-discover"></i></p>
+                        <p><i class="fa-brands fa-cc-jcb"></i></p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="./pagination.js"></script>
+
+    <script src="./cate.js">
+        
+    </script>
+
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <script src="./main.js">
+        
+    </script>
+</body>
+</html>
